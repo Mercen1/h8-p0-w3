@@ -1,14 +1,14 @@
-function dataHandling2 (input){
+function dataHandling2(input) {
 
-    input[1] += 'Elsharawy' ;
+    input[1] += 'Elsharawy';
     input[2] = 'Provinsi ' + input[2];
-    input.splice (4,2,'Pria','SMA Internasional Metro');
+    input.splice(4, 2, 'Pria', 'SMA Internasional Metro');
 
     console.log(input);
-    
+
     var tanggalLahir = input[3].split('/');
     var bulan;
-    switch(tanggalLahir[1]){
+    switch (tanggalLahir[1]) {
         case '01':
             bulan = 'Januari';
             break;
@@ -48,25 +48,25 @@ function dataHandling2 (input){
         default:
             break;
     }
-    console.log(tanggalLahir);
-    var joinTanggal=tanggalLahir.join('-')
+    //console.log(tanggalLahir);
+    var joinTanggal = tanggalLahir.join('-')
     console.log(bulan);
-    
-    for ( i=0 ; i < tanggalLahir.length ; i ++){
-        tanggalLahir[i]=Number(tanggalLahir[i]);
+
+    for (i = 0; i < tanggalLahir.length; i++) {
+        tanggalLahir[i] = Number(tanggalLahir[i]);
     }
     tanggalLahir.sort();
-    for ( i=0 ; i < tanggalLahir.length ; i ++){
-        tanggalLahir[i]=tanggalLahir[i].toString();
-        if (tanggalLahir[i].length===1){
-            tanggalLahir[i]= '0'+ tanggalLahir[i];
-       }
+    for (i = 0; i < tanggalLahir.length; i++) {
+        tanggalLahir[i] = tanggalLahir[i].toString();
+        if (tanggalLahir[i].length === 1) {
+            tanggalLahir[i] = '0' + tanggalLahir[i];
+        }
     }
     console.log(tanggalLahir);
     console.log(joinTanggal);
 
 
-    var inputSlice=input[1].slice(0,15);
+    var inputSlice = input[1].slice(0, 15);
     console.log(inputSlice)
     return null
 }

@@ -4,29 +4,28 @@ function hitungJumlahKata(kalimat) {
 
     // return panjang;
 
-    var kataArr =[];
-    var kataKata='';
+    var kataArr = [];
+    var kataKata = '';
 
-    for( i=0 ; i<kalimat.length ; i++){
-        
-        if (kalimat[i]!==' '){
+    for (i = 0; i < kalimat.length; i++) {
+
+        if (kalimat[i] !== ' ') {
             kataKata += kalimat[i];
-        }
-        else if ( kalimat[i]===' ' ){
+        } else if (kalimat[i] === ' ') {
             kataArr.push(kataKata);
-            kataKata='';
+            kataKata = '';
         }
-        if (kalimat[i+1]===undefined){
+        if (kalimat[i + 1] === undefined) {
             kataArr.push(kataKata);
         }
-        panjang = kataArr.length ;
+        panjang = kataArr.length;
     }
     return panjang;
-  }
-  
-  // TEST CASES
-  console.log(hitungJumlahKata('I have a dream')); // 4
-  console.log(hitungJumlahKata('Never eat shredded wheat or cake')); // 6
-  console.log(hitungJumlahKata('A song to sing')); // 4
-  console.log(hitungJumlahKata('I')); // 1
-  console.log(hitungJumlahKata('I believe I can code')); // 5
+}
+
+// TEST CASES
+console.log(hitungJumlahKata('I have a dream')); // 4
+console.log(hitungJumlahKata('Never eat shredded wheat or cake')); // 6
+console.log(hitungJumlahKata('A song to sing')); // 4
+console.log(hitungJumlahKata('I')); // 1
+console.log(hitungJumlahKata('I believe I can code')); // 5
