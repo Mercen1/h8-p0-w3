@@ -13,18 +13,18 @@ function targetTerdekat(arr) {
     if (hurufX.length === 0) {
         var hasil = 0;
     } else {
-        var JarakNew = [];
+        var jarakNew = [];
         for (j = 0; j < hurufX.length; j++) {
-            JarakNew[j] = Math.abs(hurufX[j] - hurufO)
+            jarakNew[j] = Math.abs(hurufX[j] - hurufO)
         }
-        for (k = 0; k < JarakNew.length - 1; k++) {
-            if (JarakNew[k] < JarakNew[k + 1]) {
-                var tampung = JarakNew[k]
-                JarakNew[k] = JarakNew[k + 1]
-                JarakNew[k + 1] = tampung
+        for (k = 0; k < jarakNew.length - 1; k++) {
+            if (jarakNew[k] < jarakNew[k + 1]) {
+                var tampung = jarakNew[k]
+                jarakNew[k] = jarakNew[k + 1]
+                jarakNew[k + 1] = tampung
             }
         }
-        hasil = JarakNew[JarakNew.length - 1]
+        hasil = jarakNew[jarakNew.length - 1]
     }
 
     return hasil;

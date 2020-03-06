@@ -1,14 +1,7 @@
 function hitungJumlahKata(kalimat) {
-    // var kata=kalimat.split(' ')
-    // var panjang = kata.length;
-
-    // return panjang;
-
     var kataArr = [];
     var kataKata = '';
-
     for (i = 0; i < kalimat.length; i++) {
-
         if (kalimat[i] !== ' ') {
             kataKata += kalimat[i];
         } else if (kalimat[i] === ' ') {

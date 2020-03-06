@@ -1,7 +1,6 @@
 function cariMean(arr) {
     var tampung = 0;
     for (i = 0; i < arr.length; i++) {
-
         tampung += arr[i]
     }
     var mean = tampung / arr.length;
@@ -9,7 +8,6 @@ function cariMean(arr) {
 
     return meanBulat
 }
-
 
 
 // TEST CASES

@@ -4,15 +4,12 @@
 
 // console.log(target);
 
-function Balikkata(kata) {
+function balikString(kata) {
     var balik = ''
     for (i = 1; i <= kata.length; i++) {
-
         balik += kata[kata.length - i]
-
     }
-    return balik;
+    console.log(balik)
+    return null;
 }
-var warna = ['hijau', 'merah', 'hitam']
-console.log(Balikkata(warna));
-console.log(Balikkata('Hello dunia'))
+balikString('Hello dunia')

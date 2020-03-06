@@ -9,7 +9,6 @@ function angkaPalindrome(num) {
         if (kataBaru === numKata) {
             return num;
         }
-
     }
 }
 

@@ -12,8 +12,6 @@ function groupAnimals(animals) {
         if (awalanHewan.length > 0) {
             kumpulHewan.push(awalanHewan);
         }
-
-
     }
     return kumpulHewan;
 }

@@ -14,13 +14,9 @@ function pasanganTerbesar(num) {
             }
         }
     }
-    //console.log(duaDigit)
-    //  duaDigit.sort();
     var digitBesar = duaDigit[duaDigit.length - 1];
-    //  return digitBesar;
     return digitBesar;
     console.log(duaDigit)
-
 }
 
 // TEST CASES
