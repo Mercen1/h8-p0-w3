@@ -1,4 +1,4 @@
-var input ='Hellow dunia' ;
+var input ='hello world!';
 
 function balikString(kata) {
     var balik = '';
