@@ -13,7 +13,6 @@ function groupAnimals(animals) {
             hasil.push(tampung);
         }
     }
-
     for (k = 0; k < hasil.length; k++) {
         for (l = 0; l < hasil.length - 1; l++) {
             if (hasil[l][0][0] > hasil[l + 1][0][0]) {
