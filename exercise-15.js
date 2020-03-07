@@ -1,19 +1,30 @@
 function groupAnimals(animals) {
-    const adjab = 'abcdefghijklmnopqrstuvwxyz';
-    var kumpulHewan = [];
-
-    for (var i = 0; i < adjab.length; i++) {
-        var awalanHewan = [];
-        for (k = 0; k < animals.length; k++) {
-            if (animals[k][0] === adjab[i]) {
-                awalanHewan.push(animals[k])
+    var hasil = [];
+    var sudah = [];
+    for (var i = 0; i < animals.length; i++) {
+        var tampung = [];
+        for (var j = 0; j < animals.length; j++) {
+            if (animals[i][0] === animals[j][0] && sudah[j] !== true) {
+                tampung.push(animals[j])
+                sudah[j] = true;
             }
         }
-        if (awalanHewan.length > 0) {
-            kumpulHewan.push(awalanHewan);
+        if (tampung.length > 0) {
+            hasil.push(tampung);
         }
     }
-    return kumpulHewan;
+
+    for (k = 0; k < hasil.length; k++) {
+        for (l = 0; l < hasil.length - 1; l++) {
+            if (hasil[l][0][0] > hasil[l + 1][0][0]) {
+                var urut = hasil[l];
+                hasil[l] = hasil[l + 1];
+                hasil[l + 1] = urut;
+            }
+        }
+    }
+
+    return hasil;
 }
 
 // TEST CASES
