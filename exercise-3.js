@@ -8,7 +8,8 @@ function dataHandling(input) {
          Hobi:  ${input[i][4]}
          `)
     }
-    console.log(hasil)
+    console.log(hasil);
+    
     return null;
 }
 dataHandling([
