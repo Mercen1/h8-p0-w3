@@ -1,15 +1,11 @@
-//const kata = ['Hello world'];
-
-//const target = kata[0];
-
-// console.log(target);
+var input ='Hellow dunia' ;
 
 function balikString(kata) {
-    var balik = ''
+    var balik = '';
     for (i = 1; i <= kata.length; i++) {
         balik += kata[kata.length - i]
     }
-    console.log(balik)
-    return null;
+
+    return balik;
 }
-balikString('Hello dunia')
+console.log(balikString(input))
