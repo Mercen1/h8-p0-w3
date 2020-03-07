@@ -16,7 +16,6 @@ function pasanganTerbesar(num) {
     }
     var digitBesar = duaDigit[duaDigit.length - 1];
     return digitBesar;
-    console.log(duaDigit)
 }
 
 // TEST CASES
